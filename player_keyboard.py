@@ -31,18 +31,13 @@ class PlayerKeyboard:
         self.bomb_limit = 1
         self.score = 1000
 
-        # if self.algorithm == Algorithm.DIJKSTRA or self.algorithm == Algorithm.DFS:
-        #     self.path = []
-        #     self.movement_path = []
-        #     # plant คือ ต้องการวาง bomb หรือไม่
-        #     self.plant = False
             
 
     def move(self, dx, dy, grid, enemys):
         tempx = int(self.pos_x / PlayerKeyboard.TILE_SIZE)
         tempy = int(self.pos_y / PlayerKeyboard.TILE_SIZE)
         # test: score every move
-        self.score -= 1
+        # self.score -= 1
 
         map = []
 
@@ -92,11 +87,6 @@ class PlayerKeyboard:
             if map[tempx][tempy-1] == 0:
                 self.pos_y -= 1
 
-        # for pu in power_ups:
-        #     if pu.pos_x == math.ceil(self.pos_x / PlayerKeyboard.TILE_SIZE) \
-        #             and pu.pos_y == math.ceil(self.pos_y / PlayerKeyboard.TILE_SIZE):
-        #         self.consume_power_up(pu, power_ups)
-
     def plant_bomb(self, map):
         b = Bomb(self.range, round(self.pos_x / PlayerKeyboard.TILE_SIZE), round(self.pos_y / PlayerKeyboard.TILE_SIZE), map, self)
         return b
@@ -118,13 +108,6 @@ class PlayerKeyboard:
                         self.score = 0
                     self.reborn()
                     return
-    # def consume_power_up(self, power_up, power_ups):
-    #     if power_up.type == PowerUpType.BOMB:
-    #         self.bomb_limit += 1
-    #     elif power_up.type == PowerUpType.FIRE:
-    #         self.range += 1
-
-    #     power_ups.remove(power_up)
 
     def load_animations(self, scale):
         front = []
