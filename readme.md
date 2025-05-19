@@ -29,12 +29,11 @@ $ python3 main.py
 
 ## 👥 Authors
 
-ketnas
-Media Technology (MDT), KMUTT
+- ketnas (Media Technology (MDT), KMUTT)
 
-##🕒  Version History
+## 🕒  Version History
 
-* 🔖 v0.2
+* 🔖 V0.2 (1/05/2025)
     * Bug Fixes:
         * Resolved issues with incorrect bomb image display.
         * Prevented adding bombs beyond the set bomb limit.
@@ -42,7 +41,7 @@ Media Technology (MDT), KMUTT
         * Fixed block generation on game start.
         * Corrected keyboard input issues for the player.
         * Fixed score display error for keyboard-controlled player at the end of the game.
-* 🔖 0.1
+* 🔖 V0.1
     * Initial Release
 
 
