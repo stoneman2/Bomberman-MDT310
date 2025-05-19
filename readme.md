@@ -32,7 +32,9 @@ $ python3 main.py
 - ketnas (Media Technology (MDT), KMUTT)
 
 ## 🕒  Version History
-
+* 🔖 V0.3 (19/05/2025)
+    * Updated `score` attribute to be an internal (private) attribute.
+    * Added `get_score()` and `set_score()` methods for controlled access.
 * 🔖 V0.2 (1/05/2025)
     * Bug Fixes:
         * Resolved issues with incorrect bomb image display.
